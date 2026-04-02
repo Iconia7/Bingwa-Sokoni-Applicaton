@@ -8,7 +8,7 @@ Automate your **Bingwa Sokoni** services for seamless and efficient management o
 
 To get started, download the latest version of the application from the **Releases** section.
 
-[**Download Latest APK Release**](https://github.com/Iconia7/Bingwa-Sokoni-Application/releases/latest)
+[**Download Latest APK Release**](https://github.com/Iconia7/Bingwa-Sokoni-Application/releases/tags)
 
 > [!NOTE]
 > Since this application interacts with USSD and SMS for automation, your Android system may flag it as an "Unknown App". Please allow **Installation from Unknown Sources** and grant the necessary permissions upon first launch.
