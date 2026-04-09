@@ -8,7 +8,7 @@ Automate your **Bingwa Sokoni** services for seamless and efficient management o
 
 To get started, download the latest version of the application from the **Releases** section.
 
-[**Download Latest APK Release**](https://github.com/Iconia7/Bingwa-Sokoni-Applicaton/releases/download/v2.1/Bingwa.v2.1.0.apk)
+[**Download Latest APK Release**](https://github.com/Iconia7/Bingwa-Sokoni-Applicaton/releases/download/v2.1/Bingwa.v2.1.1.apk)
 
 > [!NOTE]
 > Since this application interacts with USSD and SMS for automation, your Android system may flag it as an "Unknown App". Please allow **Installation from Unknown Sources** and grant the necessary permissions upon first launch.
@@ -30,7 +30,7 @@ To get started, download the latest version of the application from the **Releas
 
 Follow these steps to set up and start using the Bingwa Sokoni Automation App:
 
-1.  **Download & Install**:  Obtain the latest **Bingwa Sokoni.apk** from the [Releases](https://github.com/Iconia7/Bingwa-Sokoni-Applicaton/releases/download/v2.1/Bingwa.v2.1.0.apk) page.
+1.  **Download & Install**:  Obtain the latest **Bingwa Sokoni.apk** from the [Releases](https://github.com/Iconia7/Bingwa-Sokoni-Applicaton/releases/download/v2.1/Bingwa.v2.1.1.apk) page.
 2.  **Verify Number**: Enter your phone number and verify using the 6-digit **OTP code** sent via SMS.
 3.  **Notification Sim**: Ensure the SIM card receiving M-Pesa payment notifications is active in the phone.
 4.  **Select Your Sim**: Launch the app and select the **Notification SIM** (the one receiving the payments).
