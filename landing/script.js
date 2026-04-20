@@ -2,6 +2,12 @@
 //   BINGWA SOKONI LANDING PAGE - JS
 // =============================================
 
+// --- Pre-loader removal ---
+window.addEventListener('load', () => {
+  document.body.classList.add('loaded');
+  document.body.classList.remove('loading');
+});
+
 // --- Navbar scroll effect ---
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
@@ -186,5 +192,65 @@ if (phoneMockup && heroVisual) {
     phoneMockup.style.transition = 'transform 0.5s ease';
   });
 }
+
+// --- Contact Form Handling ---
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
+
+contactForm?.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const formData = new FormData(contactForm);
+  const data = Object.fromEntries(formData.entries());
+  
+  // Show loading state
+  const submitBtn = contactForm.querySelector('button[type="submit"]');
+  const originalBtnText = submitBtn.innerHTML;
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = 'Sending...';
+  
+  console.log('[Bingwa Sokoni] Form Submission:', data);
+  
+  // Simulate API call
+  setTimeout(() => {
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = originalBtnText;
+    
+    // Show success message
+    formStatus.innerHTML = 'Message sent successfully! We will get back to you soon.';
+    formStatus.className = 'form-status success';
+    contactForm.reset();
+    
+    // Clear status after 5 seconds
+    setTimeout(() => {
+      formStatus.innerHTML = '';
+      formStatus.className = 'form-status';
+    }, 5000);
+  }, 1500);
+});
+
+// --- Toast Notifications ---
+function showToast(message, type = 'success') {
+  const toast = document.createElement('div');
+  toast.className = `toast toast-${type}`;
+  toast.innerHTML = message;
+  document.body.appendChild(toast);
+  
+  setTimeout(() => {
+    toast.classList.add('show');
+  }, 10);
+  
+  setTimeout(() => {
+    toast.classList.remove('show');
+    setTimeout(() => toast.remove(), 500);
+  }, 3000);
+}
+
+// Update download button click tracking to show toast
+document.querySelectorAll('[id$="-download-btn"]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    showToast('🚀 Starting download... Enjoy Bingwa Sokoni!');
+  });
+});
 
 console.log('🚀 Bingwa Sokoni landing page loaded.');

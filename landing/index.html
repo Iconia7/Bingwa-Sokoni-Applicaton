@@ -5,15 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bingwa Sokoni – Automate Your Bundle Business</title>
   <meta name="description" content="Bingwa Sokoni is the ultimate automation tool for Safaricom bundle sellers in Kenya. Process M-Pesa payments, automate USSD bundles, and grow your business 24/7." />
+  <link rel="canonical" href="https://bingwasokoni.nexoracreatives.co.ke/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bingwasokoni.nexoracreatives.co.ke/" />
   <meta property="og:title" content="Bingwa Sokoni – Automate Your Bundle Business" />
   <meta property="og:description" content="The smartest tool for Kenyan bundle sellers. Automate M-Pesa fulfillment, manage your shop, and scale effortlessly." />
-  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://bingwasokoni.nexoracreatives.co.ke/app-screenshot.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://bingwasokoni.nexoracreatives.co.ke/" />
+  <meta property="twitter:title" content="Bingwa Sokoni – Automate Your Bundle Business" />
+  <meta property="twitter:description" content="The smartest tool for Kenyan bundle sellers. Automate M-Pesa fulfillment, manage your shop, and scale effortlessly." />
+  <meta property="twitter:image" content="https://bingwasokoni.nexoracreatives.co.ke/app-screenshot.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Analytics Placeholder -->
+  <!-- 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
 </head>
-<body>
+<body class="loading">
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="loader-bolt">⚡</div>
+  </div>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
@@ -26,7 +58,7 @@
         <li><a href="#features">Features</a></li>
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#support">Support</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <a href="https://github.com/Iconia7/Bingwa-Sokoni-Applicaton/releases/download/v2.1/Bingwa.v2.1.1.apk"
          class="btn btn-primary nav-cta" id="nav-download-btn" download>
@@ -430,6 +462,71 @@
         <p class="cta-note">
           ⚠️ Android only · Allow "Install from Unknown Sources" · Works on Android 8.0+
         </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT FORM ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Have Questions? <span class="gradient-text">Contact Us</span></h2>
+        <p class="section-subtitle">Need help with setup or have a feature request? Drop us a message below.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-info-card">
+            <div class="info-icon">📍</div>
+            <div class="info-body">
+              <h4>Location</h4>
+              <p>Nairobi, Kenya</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="info-icon">💬</div>
+            <div class="info-body">
+              <h4>WhatsApp</h4>
+              <p>0115 332 870</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="info-icon">✉️</div>
+            <div class="info-body">
+              <h4>Email</h4>
+              <p>support@nexoracreatives.co.ke</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-large">
+            Send Message
+            <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+          <div id="formStatus" class="form-status"></div>
+        </form>
       </div>
     </div>
   </section>

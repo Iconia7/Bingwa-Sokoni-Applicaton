@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bingwasokoni.nexoracreatives.co.ke/sitemap.xml
