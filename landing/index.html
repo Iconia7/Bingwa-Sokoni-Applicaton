@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bingwa Sokoni – Automate Your Bundle Business</title>
+  <meta name="description" content="Bingwa Sokoni is the ultimate automation tool for Safaricom bundle sellers in Kenya. Process M-Pesa payments, automate USSD bundles, and grow your business 24/7." />
+  <meta property="og:title" content="Bingwa Sokoni – Automate Your Bundle Business" />
+  <meta property="og:description" content="The smartest tool for Kenyan bundle sellers. Automate M-Pesa fulfillment, manage your shop, and scale effortlessly." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Bingwa <em>Sokoni</em></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+      <a href="https://github.com/Iconia7/Bingwa-Sokoni-Applicaton/releases/download/v2.1/Bingwa.v2.1.1.apk"
+         class="btn btn-primary nav-cta" id="nav-download-btn" download>
+        Download App
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Kenya's #1 Bundle Automation App
+        </div>
+        <h1 class="hero-title">
+          Sell Bundles on
+          <span class="gradient-text">Autopilot</span>
+        </h1>
+        <p class="hero-subtitle">
+          Bingwa Sokoni listens to your M-Pesa notifications and automatically 
+          sends data bundles, SMS packs, and airtime to your customers — instantly, 
+          24 hours a day, even while you sleep.
+        </p>
+        <div class="hero-actions">
+          <a href="https://github.com/Iconia7/Bingwa-Sokoni-Applicaton/releases/download/v2.1/Bingwa.v2.1.1.apk"
+             class="btn btn-primary btn-large" id="hero-download-btn" download>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 15V3m0 12l-4-4m4 4l4-4M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2"/>
+            </svg>
+            Download Free APK
+          </a>
+          <a href="#how-it-works" class="btn btn-ghost btn-large">
+            See How It Works
+            <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="24">0</span><span class="stat-unit">/7</span>
+            <span class="stat-label">Automation</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="100">0</span><span class="stat-unit">%</span>
+            <span class="stat-label">M-Pesa Ready</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="0">0</span><span class="stat-unit">s</span>
+            <span class="stat-label">Response Time</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <img src="app-screenshot.png" alt="Bingwa Sokoni App Dashboard" class="app-screenshot" />
+              <div class="phone-overlay-card">
+                <div class="pulse-dot"></div>
+                <div class="overlay-text">
+                  <span class="overlay-label">Latest</span>
+                  <span class="overlay-value">1GB → 0712 *** 456 ✓</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-glow"></div>
+          <div class="floating-badge badge-success">
+            <span>✓ Transaction Complete</span>
+            <span class="badge-time">0.4s</span>
+          </div>
+          <div class="floating-badge badge-token">
+            <span>🪙 250 Tokens</span>
+            <span class="badge-sub">Active</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUSTED BY ===== -->
+  <section class="social-proof">
+    <div class="container">
+      <p class="proof-text">Trusted by bundle sellers across Kenya</p>
+      <div class="proof-icons">
+        <div class="proof-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          <span>Nairobi</span>
+        </div>
+        <div class="proof-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          <span>Mombasa</span>
+        </div>
+        <div class="proof-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          <span>Kisumu</span>
+        </div>
+        <div class="proof-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          <span>Nakuru</span>
+        </div>
+        <div class="proof-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          <span>Eldoret</span>
+        </div>
+        <div class="proof-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          <span>Thika</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Features</span>
+        <h2 class="section-title">Everything You Need to Run a Thriving Bundle Business</h2>
+        <p class="section-subtitle">From instant fulfillment to customer CRM, Bingwa Sokoni covers every angle of your shop.</p>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card feature-card--primary" data-aos="fade-up">
+          <div class="feature-icon-wrap icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3>Instant M-Pesa Automation</h3>
+          <p>As soon as a customer pays via M-Pesa, the app reads the notification and automatically dials the USSD code to deliver their bundle — no manual action needed.</p>
+          <div class="feature-tag">Zero-Touch Delivery</div>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon-wrap icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+            </svg>
+          </div>
+          <h3>Online Storefront</h3>
+          <p>Get your own public shop link where customers can browse and order your data plans directly from their phones.</p>
+          <div class="feature-tag">Built-in Shop</div>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="feature-icon-wrap icon-purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <h3>Smart Analytics</h3>
+          <p>Track successful, failed, and pending transactions with daily breakdowns. Know your revenue at a glance.</p>
+          <div class="feature-tag">Real-Time Stats</div>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="feature-icon-wrap icon-amber">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+            </svg>
+          </div>
+          <h3>Custom SMS Notifications</h3>
+          <p>Automatically send personalized confirmations and failure alerts to customers using your own branded message templates.</p>
+          <div class="feature-tag">Brand Voice</div>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon-wrap icon-pink">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <h3>CRM & Loyalty Tracking</h3>
+          <p>Identify loyal customers with 5+ purchases, send bulk SMS broadcasts, and maintain your own customer phone book.</p>
+          <div class="feature-tag">Customer Growth</div>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="feature-icon-wrap icon-teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 0v10l5 3"/>
+            </svg>
+          </div>
+          <h3>Scheduling & Queuing</h3>
+          <p>Queue multiple transactions and schedule USSD commands for off-peak hours. Never miss a sale again.</p>
+          <div class="feature-tag">Set & Forget</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Setup in Minutes</span>
+        <h2 class="section-title">From Download to <span class="gradient-text">Full Automation</span> in 9 Steps</h2>
+        <p class="section-subtitle">Getting started is simple. No technical expertise required.</p>
+      </div>
+
+      <div class="steps-wrapper">
+        <div class="steps-line"></div>
+        <div class="steps-grid">
+
+          <div class="step-card" data-step="1">
+            <div class="step-number">1</div>
+            <div class="step-body">
+              <h3>Download & Install</h3>
+              <p>Tap the download button to get the latest <strong>Bingwa Sokoni APK</strong>. Install it and allow installation from unknown sources when prompted.</p>
+            </div>
+          </div>
+
+          <div class="step-card" data-step="2">
+            <div class="step-number">2</div>
+            <div class="step-body">
+              <h3>Verify Your Number</h3>
+              <p>Enter your phone number and confirm with the <strong>6-digit OTP</strong> sent to you via SMS. Your account is secured end-to-end.</p>
+            </div>
+          </div>
+
+          <div class="step-card" data-step="3">
+            <div class="step-number">3</div>
+            <div class="step-body">
+              <h3>Insert Notification SIM</h3>
+              <p>Make sure the SIM card linked to your <strong>M-Pesa Till or Paybill</strong> is active and receiving notifications in your phone.</p>
+            </div>
+          </div>
+
+          <div class="step-card" data-step="4">
+            <div class="step-number">4</div>
+            <div class="step-body">
+              <h3>Select Your SIM</h3>
+              <p>In the app, select the <strong>Notification SIM slot</strong> — the one that receives the M-Pesa payment SMS messages.</p>
+            </div>
+          </div>
+
+          <div class="step-card" data-step="5">
+            <div class="step-number">5</div>
+            <div class="step-body">
+              <h3>Enable Accessibility</h3>
+              <p>Grant the <strong>Bingwa Sokoni Accessibility Service</strong> permission. This is required for background USSD automation to work.</p>
+            </div>
+          </div>
+
+          <div class="step-card" data-step="6">
+            <div class="step-number">6</div>
+            <div class="step-body">
+              <h3>Ensure Airtime</h3>
+              <p>Keep active airtime and SMS units on your SIM so the app can dial USSD codes and send customer confirmations.</p>
+            </div>
+          </div>
+
+          <div class="step-card" data-step="7">
+            <div class="step-number">7</div>
+            <div class="step-body">
+              <h3>Configure Data Plans</h3>
+              <p>Go to <strong>Settings → Data Plans</strong> and configure your specific Safaricom Bingwa Sokoni offer codes and prices.</p>
+            </div>
+          </div>
+
+          <div class="step-card" data-step="8">
+            <div class="step-number">8</div>
+            <div class="step-body">
+              <h3>Customize Messages</h3>
+              <p>Head to <strong>Notifications</strong> and write your own branded confirmation, failure, and marketing message templates.</p>
+            </div>
+          </div>
+
+          <div class="step-card step-card--last" data-step="9">
+            <div class="step-number step-number--done">✓</div>
+            <div class="step-body">
+              <h3>Save & Go! 🚀</h3>
+              <p>Hit <strong>Save Changes</strong> and your automation is live. Bingwa Sokoni now handles every incoming payment automatically.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING / TOKENS ===== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Simple Pricing</span>
+        <h2 class="section-title">Pay Only for What You Use</h2>
+        <p class="section-subtitle">Bingwa Sokoni uses a token system. Buy tokens when you need them — 1 token = 1 automated transaction.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <span class="pricing-plan">Storefront</span>
+            <div class="pricing-price">
+              <span class="price-currency">KES</span>
+              <span class="price-amount">50</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✅ Public shop link</li>
+            <li>✅ Customer-facing storefront</li>
+            <li>✅ Manage listed offers</li>
+            <li>✅ Order management</li>
+            <li>✅ Via M-Pesa</li>
+          </ul>
+          <a href="https://github.com/Iconia7/Bingwa-Sokoni-Applicaton/releases/download/v2.1/Bingwa.v2.1.1.apk"
+             class="btn btn-outline" id="pricing-storefront-btn" download>Get Started</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <span class="pricing-plan">Automation Tokens</span>
+            <div class="pricing-price">
+              <span class="price-currency">KES</span>
+              <span class="price-amount">1</span>
+              <span class="price-period">/token</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✅ 1 token = 1 USSD transaction</li>
+            <li>✅ Tokens never expire</li>
+            <li>✅ Any bundle size supported</li>
+            <li>✅ Dual-SIM support</li>
+            <li>✅ Background automation</li>
+            <li>✅ 20 free tokens on signup</li>
+          </ul>
+          <a href="https://github.com/Iconia7/Bingwa-Sokoni-Applicaton/releases/download/v2.1/Bingwa.v2.1.1.apk"
+             class="btn btn-primary" id="pricing-tokens-btn" download>Download Free</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <span class="pricing-plan">Referral Bonus</span>
+            <div class="pricing-price">
+              <span class="price-currency">+</span>
+              <span class="price-amount">50</span>
+              <span class="price-period">tokens/referral</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✅ Earn 50 tokens per referral</li>
+            <li>✅ Referred users get 20 free tokens</li>
+            <li>✅ Unlimited referrals</li>
+            <li>✅ Share via WhatsApp or SMS</li>
+            <li>✅ Instant reward crediting</li>
+          </ul>
+          <a href="https://wa.me/254115332870" class="btn btn-outline" id="pricing-referral-btn" target="_blank">Refer Friends</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="cta-bg">
+      <div class="cta-orb cta-orb-1"></div>
+      <div class="cta-orb cta-orb-2"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Automate Your Bundle Business?</h2>
+        <p class="cta-subtitle">Download Bingwa Sokoni for free, get 20 bonus tokens, and start serving customers 24/7 from day one.</p>
+        <div class="cta-actions">
+          <a href="https://github.com/Iconia7/Bingwa-Sokoni-Applicaton/releases/download/v2.1/Bingwa.v2.1.1.apk"
+             class="btn btn-white btn-large" id="cta-download-btn" download>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 15V3m0 12l-4-4m4 4l4-4M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2"/>
+            </svg>
+            Download APK Now
+          </a>
+          <a href="https://wa.me/254115332870" class="btn btn-ghost-white btn-large" id="cta-whatsapp-btn" target="_blank">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+        <p class="cta-note">
+          ⚠️ Android only · Allow "Install from Unknown Sources" · Works on Android 8.0+
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="support">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">Bingwa <em>Sokoni</em></span>
+          </div>
+          <p class="footer-desc">The smartest bundle automation tool for Safaricom sellers in Kenya. Powered by Nexora Creative Solutions.</p>
+          <a href="https://wa.me/254115332870" class="footer-whatsapp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            0115 332 870
+          </a>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>App</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="https://github.com/Iconia7/Bingwa-Sokoni-Applicaton/releases/download/v2.1/Bingwa.v2.1.1.apk" download>Download APK</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="https://wa.me/254115332870" target="_blank">WhatsApp Support</a></li>
+            <li><a href="#how-it-works">Setup Guide</a></li>
+            <li><a href="#pricing">Token Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Download</h4>
+          <a href="https://github.com/Iconia7/Bingwa-Sokoni-Applicaton/releases/download/v2.1/Bingwa.v2.1.1.apk"
+             class="footer-download-btn" id="footer-download-btn" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3m0 12l-4-4m4 4l4-4M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2"/></svg>
+            <div>
+              <span class="dl-label">Download for</span>
+              <span class="dl-platform">Android</span>
+            </div>
+          </a>
+          <p class="footer-version">v2.1.1 · Free to Download</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Bingwa Sokoni. Powered by Nexora Creative Solutions ⚡</p>
+        <p class="footer-disclaimer">This app requires Android 8.0+ and Safaricom network access.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
